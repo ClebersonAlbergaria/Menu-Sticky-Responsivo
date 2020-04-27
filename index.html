@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+</head>
+<body>
+
+    <div class="wrapper">
+        <header>
+            <nav>
+                <div class="menu_icon">
+                    <i class="fas fa-bars fa-2x"></i>
+                </div>
+                <div class="logo">LOGO</div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Quem somos</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    </div>
+
+    <div class="container">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium voluptatem quidem, quos enim molestias velit fuga architecto atque non doloremque, itaque autem quaerat, aspernatur consectetur culpa. Nisi rem magni eveniet.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta cupiditate suscipit fugit a quos laboriosam voluptates sint, officia fugiat, quod placeat. Veniam quia blanditiis nisi quae illum. Porro, perspiciatis ducimus.</p>
+    </div>
+    
+    <script type="text/javascript">
+    
+    //show menu
+    $(document).ready(function () {
+        $(".menu_icon").on("click", function () {
+            $("nav ul").toggleClass("showing");
+        })
+    })
+    
+    //scrolling effect
+    $(window).on("scroll", function () {
+        if ($(window).scrollTop()) {
+            $("nav").addClass("black");
+        } else {
+            $("nav").removeClass("black");
+        }
+    })
+    
+    </script>
+
+</body>
+</html>
